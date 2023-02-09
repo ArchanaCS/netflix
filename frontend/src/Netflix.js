@@ -8,7 +8,8 @@ import film from "./images/film.webp";
 import children from "./images/children.png";
 import { BsPlusLg } from "react-icons/bs";
 import { CiGlobe } from "react-icons/ci";
-import {BiGlobe} from "react-icons/bi"
+import { BiGlobe } from "react-icons/bi";
+import {BsGlobe2} from "react-icons/bs";
 export default function Netflix() {
   return (
     <>
@@ -23,11 +24,14 @@ export default function Netflix() {
               <img src={netflix}></img>
             </div>
             <div className="Netflix_home_row1_right">
-              <select>
-                <CiGlobe style={{ color: "white" }} />
-                <option>English</option>
-                <option>Hindi</option>
-              </select>
+              <div className="Netflix_home_row1_right_select">
+               <BsGlobe2 style={{marginRight:10}}/>
+                <select>
+                  <option>English</option>
+                  <option>Hindi</option>
+                </select>
+              </div>
+
               <button>Sign In</button>
             </div>
           </div>
@@ -200,42 +204,40 @@ export default function Netflix() {
           </div>
           <div className="Netflix_home_row6_footer_list">
             <div className="Netflix_home_row6_footer_list_l1">
-            <ul>
-              <li>FAQ</li>
-              <li>Account</li>
-              <li>Jobs</li>
-              <li>Privacy</li>
-              <li>Contact Us</li>
-              <li>Only on Netflix</li>
-            </ul>
+              <ul>
+                <li>FAQ</li>
+                <li>Account</li>
+                <li>Jobs</li>
+                <li>Privacy</li>
+                <li>Contact Us</li>
+                <li>Only on Netflix</li>
+              </ul>
             </div>
             <div className="Netflix_home_row6_footer_list_l1">
-            <ul>
-              <li>Gift Card Terms</li>
-              <li>Media Center</li>
-              <li>Ways to Watch</li>
-              <li>Cookie Preferences</li>
-              <li>Speed Test</li>
-             
-            </ul>
+              <ul>
+                <li>Gift Card Terms</li>
+                <li>Media Center</li>
+                <li>Ways to Watch</li>
+                <li>Cookie Preferences</li>
+                <li>Speed Test</li>
+              </ul>
             </div>
             <div className="Netflix_home_row6_footer_list_l1">
-            <ul>
-              <li>Help Center</li>
-              <li>Investor Relations</li>
-              <li>Terms Of Use</li>
-              <li>Corporate Information</li>
-              <li>Legal Notice</li>
-              
-            </ul>
+              <ul>
+                <li>Help Center</li>
+                <li>Investor Relations</li>
+                <li>Terms Of Use</li>
+                <li>Corporate Information</li>
+                <li>Legal Notice</li>
+              </ul>
             </div>
           </div>
           <div className="Netflix_home_row6_footer_drop">
-           <BiGlobe/>
-           <select>
-            <option>English</option>
-            <option>Malayalam</option>
-           </select>
+            <BiGlobe />
+            <select>
+              <option>English</option>
+              <option>Malayalam</option>
+            </select>
           </div>
           <div className="Netflix_home_row6_footer_final">
             <label>Netflix india</label>

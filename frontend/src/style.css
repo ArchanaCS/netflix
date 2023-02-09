@@ -21,15 +21,26 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
+  /* background-color: #5b171b; */
 }
-.Netflix_home_row1_right select {
-  background-color: rgba(15, 14, 14, 0.8);
+.Netflix_home_row1_right_select {
+  border: 1px solid grey;
+
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  color:white;
+  margin-right: 10px;
+}
+.Netflix_home_row1_right_select select{
+  border: none;
+  outline: none;
+  background-color:transparent;
   color: white;
-  border: 1px solid white;
-  padding: 10px 20px 10px 20px;
-  margin-right: 20px;
-  border-radius: 3px;
-  /* margin-top: 25px; */
+  font-size: 1rem;
+  font-weight: 400;
 }
 .Netflix_home_row1_left img {
   width: 25%;
