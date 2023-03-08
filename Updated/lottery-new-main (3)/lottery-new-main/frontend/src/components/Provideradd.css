@@ -1,0 +1,52 @@
+.provideradd_container{
+    padding: 10px;
+    background-color: #020223;
+}
+.provideradd_header{
+    /* color: goldenrod; */
+    display: flex;
+    align-items: center;
+    
+    /* justify-content: center; */
+}
+.provideradd_header h4{
+    font-size: 16px;
+}
+.provideradd_header span{
+    font-size: 20px;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+.provideradd_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.provideradd_button button{
+padding: 10px;
+margin-top: 15px;
+width: 216px;
+border-radius: 5px;
+background-color: goldenrod;
+color: white;
+}
+.provideradd_button button:hover{
+    background-color: rgba(218, 165, 32, 0.774);
+    cursor: pointer;
+}
+
+.provideradd_grid{
+    display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) ;
+}
+.provideradd_input select{
+    color: #020223;
+    background-color: white;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #020223;
+}

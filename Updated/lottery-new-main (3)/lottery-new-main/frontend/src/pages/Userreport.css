@@ -1,0 +1,73 @@
+.Userrreport_container{
+    background-color: #0b0b2a;
+    width: 99%;
+    height: 100vh;
+    padding: 1%;
+}
+.userreport_headerUser{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.Userreport_header{
+    background-color: #171739;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: white;
+    border-radius: 5px; 
+}
+.Userreport_header_left,.Userreport_header_right{
+    font-size: larger;
+    padding: 5px 5%;
+    
+}
+
+.Userreport_box{
+    background-color: #171739;
+color: white;
+margin-top: 30px;
+padding: 10px;
+border-radius: 5px;                 
+}
+.Userreport_row1,.Userreport_row2,.Userreport_row3,.Userreport_row4,.Userreport_row5{
+    background-color: rgb(88, 182, 199);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 10px;
+    
+}
+.Userreport_row1{
+ border-top-left-radius: 8px;
+ border-top-right-radius: 8px;
+}
+.Userreport_row1_text{
+    margin-left: 20px;
+}
+.Userreport_row1:hover,.Userreport_row2:hover,.Userreport_row3:hover,.Userreport_row4:hover,.Userreport_row5:hover,.Userreport_row6:hover{
+    font-weight: bold;
+}
+
+
+.Userreport_row3_text,.Userreport_row4_text{
+    margin-left: 80px;
+}
+.Userreport_row5_text{
+    margin-left: 100px;
+}
+.Userreport_row6{
+    background-color: rgb(88, 182, 199);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.Userreport_row2_text{
+    margin-left: 20px;
+}

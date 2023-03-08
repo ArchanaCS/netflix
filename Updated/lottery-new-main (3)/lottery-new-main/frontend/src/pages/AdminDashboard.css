@@ -1,0 +1,94 @@
+.AdminDashboard_outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* gap:50px; */
+  background-color: #0b0b2a;;
+}
+.AdminDashboard_headerUser {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.AdminDashboard_main{
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 174.8px);
+}
+.AdminDashboard_main_col_left{
+background-color: #020223;
+}
+.AdminDashboard_main_col_right{
+  width: calc(100% - 210px);
+  padding: 15px;
+}
+.AdminDashboard_row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.AdminDashboard_row_col {
+  width: 48%;
+  background-color: #020223;
+  color: #fff;
+  /* padding: 10px; */
+  padding: 5px 10px 15px 10px;
+  border-radius: 10px;
+
+}
+.AdminDashboard_row_col label{
+  font-size: 25px;
+  margin: 15px 0px 18px 10px;
+
+}
+.AdminDashboard_tables {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.AdminDashboard_lottery {
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.109);
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30%;
+  flex-direction: column;
+}
+.AdminDashboard_lottery_btn {
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: right;
+}
+
+.AdminDashboard_footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.AdminDashboard_row_col1{
+  width:40%;
+  
+}
+.AdminDashboard_row_col2{
+  width:40%;
+}
