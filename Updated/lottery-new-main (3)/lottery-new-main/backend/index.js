@@ -1144,6 +1144,7 @@ app.post("/updatewinningunit", (req, res) => {
         "')";
     }
   }
+  console.log(sql)
   con.query(sql, (err, result) => {
     if (err) res.send("Error");
     res.send(result);
