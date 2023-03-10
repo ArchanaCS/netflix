@@ -1418,16 +1418,29 @@ app.post("/updatepurchase", (req, res) => {
 });
 
 app.post("/userreport", (req, res) => {
-  let id = req.body.id;
+  let lid = req.body.lid;
+  let id=req.body.id;
+  console.log("id",lid)
   let sql =
-    "SELECT l.txtLotteryname,m.txtMatchingcount,m.txtPrizemoney,m.txtMatchnum FROM tblresultmap m JOIN tbllotterymaster l ON l.id = m.refLotterymasterid JOIN tblunit u ON u.id = m.refUnitid WHERE  l.id IN (68 , 69) AND u.refUser = '" +
+    "SELECT l.txtLotteryname,m.txtMatchingcount,m.txtPrizemoney,m.txtMatchnum FROM tblresultmap m JOIN tbllotterymaster l ON l.id = m.refLotterymasterid JOIN tblunit u ON u.id = m.refUnitid WHERE  l.id IN ('"+lid[0]+"' , '"+lid[1]+"') AND u.refUser = '" +
     id +
     "'";
+    console.log(sql)
   con.query(sql, (err, result) => {
     if (err) throw err;
     res.send(result);
   });
 });
+
+app.post("/userreport_options",(req,res)=>{
+
+  let sql="select id value,txtLotteryname label from tbllotterymaster;";
+  con.query(sql,(err,result)=>{
+    if(err)throw err;
+    res.send(result)
+
+  })
+})
 app.listen(8000, () => {
   console.log("listening on port");
 });
