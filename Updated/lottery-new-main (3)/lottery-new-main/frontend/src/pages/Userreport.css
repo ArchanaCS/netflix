@@ -71,3 +71,11 @@ border-radius: 5px;
 .Userreport_row2_text{
     margin-left: 20px;
 }
+.Userreport_header label{
+     margin-left: 15%;
+}
+.Userreport_reactselect{
+    width:20%;
+    color:black
+
+}
